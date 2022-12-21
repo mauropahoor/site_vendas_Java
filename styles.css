@@ -1,7 +1,3 @@
-*{
-    font-weight: 550;
-}
-
 #catalogo{
     
 }
@@ -16,7 +12,7 @@ nav{
 
 .carousel-item img {
     position: absolute;
-    object-fit: fill;
+    object-fit: cover;
     top: 0;
     left: 0;
     min-height: 300px;
@@ -31,10 +27,74 @@ nav{
 .box img{
     max-width: 220px;
     max-height: 220px;
+    
 }
 .box .content{
     padding: 20px;
 }
+
+/*Sidebar*/
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    background-color: rgba(255,255,255,.95);
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    text-align: center;
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #6e6e6e;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  #comprasTitle{
+    font-size: 22px;
+    font-weight: 900;
+  }
+
+  #comprasContainer{
+    
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
 
 @media (min-width: 768px) {
     .navbar-brand.abs
