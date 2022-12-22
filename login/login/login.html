@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" type="text/css" href="login.css" media="screen" />
+</head>
+
+<body>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase.js"></script>
+
+    <div id="container">
+        <header>
+            <h2 id="title">Faça seu login</h2>
+        </header>
+
+        <p id="loginErrorMessage"></p>
+
+        <div id="inputs">
+            <input id="userEmail" type="text" placeholder="Email">
+            <input id="userPassword" type="password" placeholder="Senha">
+        </div>
+
+        <button onclick="login()">CONTINUAR</button>
+
+        <footer>
+            <a href="../register/register.html">
+                <h3>Ainda não sou cliente</h3>
+            </a>
+
+            <a href="../../index.html"><b>Voltar</b></a>
+        </footer>
+
+        <script src="../app.js"></script>
+
+    </div>
+</body>
+
+</html>

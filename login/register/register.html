@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+
+    <link rel="stylesheet" type="text/css" href="register.css" media="screen" />
+</head>
+
+<body>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase.js"></script>
+
+    <div id="container">
+        <header>
+            <h2 id="title">Crie sua conta</h2>
+        </header>
+
+        <p id="registerErrorMessage"></p>
+
+        <div id="inputs">
+            <input id="newUserName" type="text" placeholder="Nome">
+            <input id="newUserEmail" type="text" placeholder="Email">
+            <input id="newUserPassword" type="password" placeholder="Senha">
+            <input id="newUserSecondPassword" type="password" placeholder="Confirmar Senha">
+        </div>
+
+        <button onclick="createUser()">CRIAR CONTA</button>
+
+        <footer>
+            <a href="../login/login.html">
+                <h3>Já sou cliente</h3>
+            </a>
+        </footer>
+    </div>
+
+    <script src="../app.js"></script>
+
+</body>
+
+</html>
