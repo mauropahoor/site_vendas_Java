@@ -14,36 +14,39 @@ nav{
     min-height: 300px;
 }
 
+#catalogo{
+  text-align: center;
+}
+
 .box{
-    margin: 10px;
-    border: 2px solid black;
-    display: inline-block;
-    text-align: center;
+  margin: 10px;
+  border: 2px solid black;
+  display: inline-block;
+  text-align: center;
 }
 .box img{
-    max-width: 220px;
-    max-height: 220px;
-    
+  max-width: 220px;
+  max-height: 220px;
 }
 .box .content{
-    padding: 20px;
+  padding: 20px;
 }
 
 /*Sidebar*/
 
 /* The side navigation menu */
 .sidenav {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    right: 0;
-    background-color: rgba(255,255,255,.95);
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-    text-align: center;
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  right: 0;
+  background-color: rgba(255,255,255,.95);
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  text-align: center;
   }
   
   /* The navigation menu links */
@@ -80,11 +83,25 @@ nav{
     transition: margin-left .5s;
     padding: 20px;
   }
+
+  #carrinhoDeCompras{
+    background: none;
+	  color: inherit;
+	  border: none;
+	  padding: 0;
+	  font: inherit;
+	  cursor: pointer;
+	  outline: inherit;
+  }
   
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+  }
+
+  p{
+    margin-bottom: 0;
   }
 
 

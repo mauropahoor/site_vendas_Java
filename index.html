@@ -17,7 +17,7 @@
                 <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse">
+                <div class="navbar-collapse collapse" id="collapseNavbar">
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link" href="login/login.html">Entrar/Cadastrar</a>
@@ -27,8 +27,12 @@
                         <li class="nav-item">
                             <p class="nav-link">R$ 0,00</p>
                         </li>
-                        <li>
-                            <button onclick="openNav()">Carrinho</button>
+                        <li class="nav-item">
+                            <button onclick="openNav()" id="carrinhoDeCompras">
+                                <svg width="29" height="32" viewBox="-0.21 -0.069 29.171 32.088" fill="#1D1D1B" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M27.5611 8.18099C27.5268 7.65365 27.0856 7.24349 26.5508 7.24349H21.1965V5.67969C21.1965 2.54818 18.192 0 14.5 0C10.808 0 7.80351 2.54818 7.80351 5.67969V7.24349H2.44921C1.91444 7.24349 1.47319 7.65365 1.43894 8.18099L0.00190683 30.9375C-0.0152164 31.2135 0.0835715 31.4831 0.274561 31.6849C0.465551 31.8854 0.732936 32 1.01218 32H27.9878C28.2671 32 28.5344 31.8854 28.7254 31.6849C28.9164 31.4831 29.0152 31.2135 28.9981 30.9375L27.5611 8.18099ZM9.82668 5.67969C9.82668 3.65104 11.9236 2 14.5 2C17.0764 2 19.1733 3.65104 19.1733 5.67969V7.24349H9.82668V5.67969ZM7.80351 9.24349V11.4154C7.80351 11.9674 8.25661 12.4154 8.81509 12.4154C9.37357 12.4154 9.82668 11.9674 9.82668 11.4154V9.24349H19.1733V11.4154C19.1733 11.9674 19.6264 12.4154 20.1849 12.4154C20.7434 12.4154 21.1965 11.9674 21.1965 11.4154V9.24349H25.5998L26.4763 23.1107H2.52371L3.40021 9.24349H7.80351ZM2.0883 30L2.4395 24.444H26.5605L26.9117 30H2.0883Z" style="fill: rgba(255, 255, 255, 0.86);"/>
+                                </svg>  
+                            </button>
                         </li>
                     </ul>
                 </div>
@@ -53,13 +57,13 @@
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img class="w-100 h-100" src="https://lh3.googleusercontent.com/t_3bbLNnySeGWg3nlp1FcKt73ByGLTNV7wAchO4x7k5sU08vv2gIFwAyJPvHmCRzRQVcwnqNV68VmBV8xd93dDHGWhzLjFFRmXp6HVLW90Y4OeWSqWTcMYbxR0N4DVPcjsM5q3C6JDhn9e18UK5Mqc-Vv50kiEYqSdl3jYWiamoxXUPgh5fbWI3pZTK6CVQLdTgvxQIABaWhfGgNcwOII22qxBe00mJ2eCUA3UAeIulsXRVfSNYmKC_LIB1wC_C_tLGTdiB5U1CxVE4jz8Yv8gvTFnTt56QEVL83uCGVHtrrekvbw3N8wmvEyd5FXSWoPmoo80PdU6lPrwIe7tE7mMlWgQ0HcQ8rt4dQ-ZlvUcOmJLLBev1MNVy8CvTji1h_JXL3hVZxvOp1ucde-2g1aideGl2hPQ86fbYdclgov9Gt0FJWHOEiBPtBH33Jda2SR8KNwmfUHQklu5Ykar2Ll8Bc49coxWdouToLjfL_bM9z1HVZIw7MtJa6Jworl_i2kKmzrr1bSgwNg3CTsPba0oIxTXLmf23jkpxcGAO0AhbR-E49bfVP66DoAMs3FdbW8WRR3D8AcrwSzlLJhX5yFirdFqupkxLRxUpJOpU4gDNTU2DRC9riFBwXiERNujUlPK1qpx5xQcSm1e0jWbIXIQlw00bpS23Z8L8jER4lhwUmbnpKMDH8SxOUhmEXw7IqSam1xyElels6b8mCBqNtHJS5fH3DKevzhl9Z9hqUtiVEKHdG134uilAgb0peM86CyNQ0bmdj4L91JiAt3_v9y3-0DRfLV5jRSStKdIQrPZQcv5eeHUiOOYTXvFdeHom7glUwP0dIkNSgT8f4RAXohyCwEvjLGzgEz5t_AMBXi6opMTnBabfcSlrMq1SHVV267Ru7uXEpbIh7aFhf1cJvzHvX-9Ytr1K778QU3h61JoZWiQ=w697-h929-no?authuser=0" alt="First slide">
+                <img class="w-100 h-100" src="dhttps://lh3.googleusercontent.com/t_3bbLNnySeGWg3nlp1FcKt73ByGLTNV7wAchO4x7k5sU08vv2gIFwAyJPvHmCRzRQVcwnqNV68VmBV8xd93dDHGWhzLjFFRmXp6HVLW90Y4OeWSqWTcMYbxR0N4DVPcjsM5q3C6JDhn9e18UK5Mqc-Vv50kiEYqSdl3jYWiamoxXUPgh5fbWI3pZTK6CVQLdTgvxQIABaWhfGgNcwOII22qxBe00mJ2eCUA3UAeIulsXRVfSNYmKC_LIB1wC_C_tLGTdiB5U1CxVE4jz8Yv8gvTFnTt56QEVL83uCGVHtrrekvbw3N8wmvEyd5FXSWoPmoo80PdU6lPrwIe7tE7mMlWgQ0HcQ8rt4dQ-ZlvUcOmJLLBev1MNVy8CvTji1h_JXL3hVZxvOp1ucde-2g1aideGl2hPQ86fbYdclgov9Gt0FJWHOEiBPtBH33Jda2SR8KNwmfUHQklu5Ykar2Ll8Bc49coxWdouToLjfL_bM9z1HVZIw7MtJa6Jworl_i2kKmzrr1bSgwNg3CTsPba0oIxTXLmf23jkpxcGAO0AhbR-E49bfVP66DoAMs3FdbW8WRR3D8AcrwSzlLJhX5yFirdFqupkxLRxUpJOpU4gDNTU2DRC9riFBwXiERNujUlPK1qpx5xQcSm1e0jWbIXIQlw00bpS23Z8L8jER4lhwUmbnpKMDH8SxOUhmEXw7IqSam1xyElels6b8mCBqNtHJS5fH3DKevzhl9Z9hqUtiVEKHdG134uilAgb0peM86CyNQ0bmdj4L91JiAt3_v9y3-0DRfLV5jRSStKdIQrPZQcv5eeHUiOOYTXvFdeHom7glUwP0dIkNSgT8f4RAXohyCwEvjLGzgEz5t_AMBXi6opMTnBabfcSlrMq1SHVV267Ru7uXEpbIh7aFhf1cJvzHvX-9Ytr1K778QU3h61JoZWiQ=w697-h929-no?authuser=0" alt="First slide">
               </div>
               <div class="carousel-item">
-                <img class="w-100 h-100" src="https://lh3.googleusercontent.com/mNw1H11lBPgF83SfHd0ZfRIOHaRhtAcdSa6J7WvZZv-kZBRBd22yfpuR5-f5-dVhxpllBUIAAdtJ1X3bPV25qrZKZOPBjh3UOExNtWIH0zBwwiCy4P4ufFC_CuuxTv0B4PuvV0mWsW4DGj0lMX9EBBioZQCwxokAiNuovQTxGe3dfNY0z2wPxNR5W6RP-Vftu2OM0m2O9T1vaOsrfSFSDSIsgHn9HBCM4qn8McCCE4EhFzpKJ17Hzy88ITK7_dVSdHXw2vn698bTy64qr64mjvSpicyXKsv9jyamZBTv_HbUOfStnvSg98nUM_jw42yMxetr7M-BYV1DJFq_5Lo__xW0N62hxpLApsOh6g7IMkqOpZzcOsFeGX58qok721d1zx6YjRaUO_1Od0LaqUE19EwXMOCG4KbIO9sN46cbUJf4KqVHCXjbX08ryoFbBRZRmn6eoKghKs5TI9Il6uj1qJ2L5t11vot2bCpNwQ_Eqmn2Jsi85GVi0gMGA09XfyBiXBNwBnFdW64uJkD-uYEvOQWGQzVOzzM0Zf2MFT6J7ErQnkmjiDenaEpeZN5olM6SweGYCjK3iS3Uqh5k4kdBwgXmNrwL6sdTrG6tRemQbMbh3HbODFNxTMHiQudjZ4ejVUrvy-fmc3C8lTpHExyHroe_d3iDq2R2utVJsPG3McrPDRq4jyssYg7Z7yWzf-xMtd_YQK0ReItBdHsmPDeI5mhVnxTe5Ozj03B6fMiZgAyNIHOE_B7CH7q9pnglYsMvYpxUQz-J9V2z9wPu6fjtNgTnT6XNXC9CPeqg3UBnPxoAWOk45L_ZMlqg94oeTI7oIexE6MsXs17EH7fQwKosUfxTJx-KP5Yhj_4KbfortSLJNUrK9OE7SPNsMaa-mg1OIHM01Jsqu3tdm1LnnsP4VNyHii4B7VmcG9T197Nb3IMDsw=w1239-h929-no?authuser=0" alt="Second slide">
+                <img class="w-100 h-100" src="dhttps://lh3.googleusercontent.com/mNw1H11lBPgF83SfHd0ZfRIOHaRhtAcdSa6J7WvZZv-kZBRBd22yfpuR5-f5-dVhxpllBUIAAdtJ1X3bPV25qrZKZOPBjh3UOExNtWIH0zBwwiCy4P4ufFC_CuuxTv0B4PuvV0mWsW4DGj0lMX9EBBioZQCwxokAiNuovQTxGe3dfNY0z2wPxNR5W6RP-Vftu2OM0m2O9T1vaOsrfSFSDSIsgHn9HBCM4qn8McCCE4EhFzpKJ17Hzy88ITK7_dVSdHXw2vn698bTy64qr64mjvSpicyXKsv9jyamZBTv_HbUOfStnvSg98nUM_jw42yMxetr7M-BYV1DJFq_5Lo__xW0N62hxpLApsOh6g7IMkqOpZzcOsFeGX58qok721d1zx6YjRaUO_1Od0LaqUE19EwXMOCG4KbIO9sN46cbUJf4KqVHCXjbX08ryoFbBRZRmn6eoKghKs5TI9Il6uj1qJ2L5t11vot2bCpNwQ_Eqmn2Jsi85GVi0gMGA09XfyBiXBNwBnFdW64uJkD-uYEvOQWGQzVOzzM0Zf2MFT6J7ErQnkmjiDenaEpeZN5olM6SweGYCjK3iS3Uqh5k4kdBwgXmNrwL6sdTrG6tRemQbMbh3HbODFNxTMHiQudjZ4ejVUrvy-fmc3C8lTpHExyHroe_d3iDq2R2utVJsPG3McrPDRq4jyssYg7Z7yWzf-xMtd_YQK0ReItBdHsmPDeI5mhVnxTe5Ozj03B6fMiZgAyNIHOE_B7CH7q9pnglYsMvYpxUQz-J9V2z9wPu6fjtNgTnT6XNXC9CPeqg3UBnPxoAWOk45L_ZMlqg94oeTI7oIexE6MsXs17EH7fQwKosUfxTJx-KP5Yhj_4KbfortSLJNUrK9OE7SPNsMaa-mg1OIHM01Jsqu3tdm1LnnsP4VNyHii4B7VmcG9T197Nb3IMDsw=w1239-h929-no?authuser=0" alt="Second slide">
               </div>
               <div class="carousel-item">
-                <img class="w-100 h-100" src="https://lh3.googleusercontent.com/ZknWoJ2pAdveF1Yxftb2M6lrGKK2yqtT_H5MOoaSQcVz7VzZHaP-GTgayxFInRydmL6fqpTQxTe4DWEDZI2FCN5C_-fc_ez9GyBV3wKTaVu_hZTlF1d4LCowV_CwLJr1uqQElKBo91KlC-Rt8v2Tg8qZsH44YxI4nE5vidBA39eQdTuWxchCth9eKi2a2Hb7whjDJhRqY5nQra1MxD1n2uNggvzEKhWshETYGZn8LdG9fUsYVKAMsh23u5bDL9Iip9ZZcUEfuNUeCBDLPChxs-W6I7FCUy2BqxFC4vmKChzhkOvS9y4yERVircZ1ypPWM0mwSXdNIyHsOkibNmbnfUk77RfywxEFfscvjDsN1ytLXS_ZMIFqriZrqTkdeKpS43GvWHf-0H7uiYxaIwckUZLwLLInHtWQKITqnmtlqug6_rT49GLyEXLTAvf_3lCm6NuoN8gEifqk1AW2dAJP1Z0SOlk1l-Ga5i9yKJnitFKrMqbmgGnv2W-vl1X8XlPOn9CACJwFxwibJOQ6cStF_fKvuWb1h0iyTtPeuas79abKhoZPtQyUIjSFbAPoFVlmAbmG8VdvtsbMMeQozFUawwC5ivuKskm1F0fk-CuJGOR6m-cayzNa4OHhn-3h0U2NVaXqSMphnTErFPVYomj7Lvs0jD6u1AfFiyULFCEerQo0uZGaVmLbyvWSVHoHJodBj_AF8o0o9_hI89Dcr91YFP78ltZ3-EF-sx4IOgTsQnOELKnOMBU5oxFz4MCiqRl-BNP5nN5DbiR1NTTP_9QSjX60S7AjojkXZVrv7rbOGV0mX0oytNXAcRONIEC5uL6rdXfW1VKwhtDm2WNatO90fqbmn5lgGVcC5XpqwR2A3X5VWAXRf0pXv2FaHo8IyOe7SHmpILxdLCp-G4H_DihMCXrqheDqm8KtLWghVkk9M3N-Cg=w696-h929-no?authuser=0" alt="Third slide">
+                <img class="w-100 h-100" src="dhttps://lh3.googleusercontent.com/ZknWoJ2pAdveF1Yxftb2M6lrGKK2yqtT_H5MOoaSQcVz7VzZHaP-GTgayxFInRydmL6fqpTQxTe4DWEDZI2FCN5C_-fc_ez9GyBV3wKTaVu_hZTlF1d4LCowV_CwLJr1uqQElKBo91KlC-Rt8v2Tg8qZsH44YxI4nE5vidBA39eQdTuWxchCth9eKi2a2Hb7whjDJhRqY5nQra1MxD1n2uNggvzEKhWshETYGZn8LdG9fUsYVKAMsh23u5bDL9Iip9ZZcUEfuNUeCBDLPChxs-W6I7FCUy2BqxFC4vmKChzhkOvS9y4yERVircZ1ypPWM0mwSXdNIyHsOkibNmbnfUk77RfywxEFfscvjDsN1ytLXS_ZMIFqriZrqTkdeKpS43GvWHf-0H7uiYxaIwckUZLwLLInHtWQKITqnmtlqug6_rT49GLyEXLTAvf_3lCm6NuoN8gEifqk1AW2dAJP1Z0SOlk1l-Ga5i9yKJnitFKrMqbmgGnv2W-vl1X8XlPOn9CACJwFxwibJOQ6cStF_fKvuWb1h0iyTtPeuas79abKhoZPtQyUIjSFbAPoFVlmAbmG8VdvtsbMMeQozFUawwC5ivuKskm1F0fk-CuJGOR6m-cayzNa4OHhn-3h0U2NVaXqSMphnTErFPVYomj7Lvs0jD6u1AfFiyULFCEerQo0uZGaVmLbyvWSVHoHJodBj_AF8o0o9_hI89Dcr91YFP78ltZ3-EF-sx4IOgTsQnOELKnOMBU5oxFz4MCiqRl-BNP5nN5DbiR1NTTP_9QSjX60S7AjojkXZVrv7rbOGV0mX0oytNXAcRONIEC5uL6rdXfW1VKwhtDm2WNatO90fqbmn5lgGVcC5XpqwR2A3X5VWAXRf0pXv2FaHo8IyOe7SHmpILxdLCp-G4H_DihMCXrqheDqm8KtLWghVkk9M3N-Cg=w696-h929-no?authuser=0" alt="Third slide">
               </div>
             </div>
         </div>
@@ -133,5 +137,8 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
 </body>
 </html>

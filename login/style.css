@@ -67,9 +67,6 @@ footer{
     padding-bottom: 6%;
 }
 
-footer h3{
-    
-}
 
 footer a{
     color: #252525;
@@ -80,8 +77,9 @@ footer a:hover{
     opacity: 0.5;
 }
 
-/*#box h1{
-    color: white;
-}*/
 
-
+@media only screen and (max-width: 768px) {
+    #container{
+        width: 100%;
+    }
+}
